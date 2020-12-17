@@ -7,8 +7,8 @@ const getUser = (req, res) => {
 };
 
 const postUser = (req, res) => {
-  const username = req.body.username;
-  const newUser = new User({ username });
+  const name = req.body.name;
+  const newUser = new User({ name });
 
   newUser
     .save()

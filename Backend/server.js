@@ -1,14 +1,19 @@
 const express = require("express")
 const mongoose = require("mongoose")
 
-const User = require("./models/User")
-const Child = require("./models/Child")
-const District = require("./models/District")
-const State = require("./models/State")
+const userRoute = require("./routes/users")
+const districtRoute = require("./routes/districts")
+const childRoute = require("./routes/children")
+const stateRoute = require("./routes/states")
 
 const app = express()
 
 app.use(express.json())
+
+app.use("/api/users", userRoute)
+app.use("/api/districts",districtRoute)
+app.use("/api/children",childRoute)
+app.use("/api/states",stateRoute)
 
 mongoose.connect(
     "mongodb://localhost/dhwani",
