@@ -1,0 +1,41 @@
+#box1{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin:10px
+}
+#box2{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin:10px
+}
+#box3{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin:10px
+}
+#box4{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin:10px
+}
+#box5{
+    position:absolute;
+    top: 70px;
+    left: 70px;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    z-index: 0;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-color: transparent;
+}
