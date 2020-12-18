@@ -1,4 +1,5 @@
 const Child = require("../models/child");
+const fs = require("fs")
 
 const getChild = (req, res) => {
   Child.find()
@@ -8,8 +9,14 @@ const getChild = (req, res) => {
 
 const postChild = (req, res) => {
   const name = req.body.name;
-  const age = req.body.age;
-  const newChild = new Child({ name, age });
+  const sex = req.body.sex;
+  const dob = req.body.dob;
+  const father = req.body.father;
+  const mother = req.body.mother;
+  const state = req.body.state;
+  const district = req.body.district;
+  const avatar = req.body.avatar;
+  const newChild = new Child({ name, sex, dob, father, mother, state, district, avatar });
 
   newChild
     .save()

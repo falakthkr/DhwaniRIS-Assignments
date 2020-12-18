@@ -10,6 +10,9 @@ const districtSchema = new Schema({
       type : String,
       required : true
   }
+},
+{
+    versionKey: false
 });
 
 module.exports = mongoose.model("District", districtSchema);

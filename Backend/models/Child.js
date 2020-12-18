@@ -6,10 +6,36 @@ const childSchema = new Schema({
     type: String,
     required: true,
   },
-  age : {
-      type : Number,
+  dob : {
+      type : Date,
+      required :  true
+  },
+  sex : {
+      type : String,
+      required : true
+  },
+  father : {
+      type : String,
+      required : true
+  },
+  mother : {
+      type : String,
+      required : true
+  },
+  state : {
+      type : String,
+      required : true
+  },
+  district : {
+      type : String,
+      required : true
+  },
+  avatar : {
+      type : URL,
       required : true
   }
+},{
+    versionKey: false
 });
 
 module.exports = mongoose.model("Child", childSchema);

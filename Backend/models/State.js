@@ -7,6 +7,9 @@ const stateSchema = new Schema({
     required: true,
     unique : true
   },
+},
+{
+    versionKey: false
 });
 
 module.exports = mongoose.model("State", stateSchema);
