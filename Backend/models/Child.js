@@ -7,7 +7,7 @@ const childSchema = new Schema({
     required: true,
   },
   dob : {
-      type : Date,
+      type : String,
       required :  true
   },
   sex : {
@@ -31,8 +31,7 @@ const childSchema = new Schema({
       required : true
   },
   avatar : {
-      type : String,
-      required : true
+      type : String
   }
 },{
     versionKey: false

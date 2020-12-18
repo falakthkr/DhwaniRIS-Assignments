@@ -8,7 +8,7 @@ const getState = (req, res) => {
 
 const postState = (req, res) => {
   const name = req.body.name;
-  const newState = new User({ name });
+  const newState = new State({ name });
 
   newState
     .save()
