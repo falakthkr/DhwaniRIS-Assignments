@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <div className={styles.container}>
+                <h1>Card Number<sup></sup></h1>
+                <input type="text" id="one" onkeyup="movetoNext(this, 'two')" maxlength="4" />  
+                <input type="text" id="two" onkeyup="movetoNext(this, 'three')" maxlength="4" />  
+                <input type="text" id="three" onkeyup="movetoNext(this, 'four')" maxlength="4" />  
+                <input type="text" id="four" maxlength="4" />  
+            </div>
+        </div>
+
+        <script>
+            function movetoNext(current,nextID){
+                if (current.value.length >= current.maxLength) {  
+                    document.getElementById(nextID).focus();  
+                }
+            }
+        </script>
+    </body>
+</html>
