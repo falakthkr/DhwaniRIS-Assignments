@@ -22,6 +22,15 @@ const userSchema = new Schema({
   designation : {
     type : String,
     required : true
+  },
+  states : {
+    type : Array
+  },
+  districts : {
+    type : Array
+  },
+  children : {
+    type : Array
   }
 },
 {

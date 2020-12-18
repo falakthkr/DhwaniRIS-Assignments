@@ -31,7 +31,7 @@ const childSchema = new Schema({
       required : true
   },
   avatar : {
-      type : URL,
+      type : String,
       required : true
   }
 },{
