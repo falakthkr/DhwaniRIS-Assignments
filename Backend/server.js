@@ -22,7 +22,7 @@ mongoose.connect(
       useNewUrlParser: true,
       useUnifiedTopology: true,
     },
-    (req, res) => {
+    () => {
       console.log("The database is connected");
     }
 );

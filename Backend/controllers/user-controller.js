@@ -7,8 +7,12 @@ const getUser = (req, res) => {
 };
 
 const postUser = (req, res) => {
+  const username = req.body.username;
+  const password = req.body.password;
   const name = req.body.name;
-  const newUser = new User({ name });
+  const organization = req.body.organization;
+  const designation = req.body.designation;
+  const newUser = new User({ username, password, name, organization, designation });
 
   newUser
     .save()
