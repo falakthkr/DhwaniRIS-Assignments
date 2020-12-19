@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from "./Card.module.css"
 
 export default function CreditCard(props) {
+	const [boxes,setBoxes] = useState("")
 	const [ input, setInput ] = useState(new Array(4).fill(''));
 	const [ array, setArray ] = useState([]);
 	const [ data, setData ] = useState([]);
@@ -102,9 +103,10 @@ export default function CreditCard(props) {
             }
         }
     }
-
+	console.log(boxes)
 	return (
 		<div>
+			{/* <input type="number" onChange={(e)=>setBoxes(e.target.value)} /> */}
 			{/* Credit Card Input Component */}
 			<div>
 				<h3>

@@ -34,7 +34,7 @@ const childSchema = new Schema({
       type : String
   },
   districtID : {
-      type : mongoose.objectID,
+      type : String,
       required : true
   }
 },{
