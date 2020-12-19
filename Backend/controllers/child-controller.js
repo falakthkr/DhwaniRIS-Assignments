@@ -15,8 +15,9 @@ const postChild = (req, res) => {
   const mother = req.body.mother;
   const state = req.body.state;
   const district = req.body.district;
+  const districtID = req.body.id;
   const avatar = req.body.avatar;
-  const newChild = new Child({ name, sex, dob, father, mother, state, district, avatar });
+  const newChild = new Child({ districtID, name, sex, dob, father, mother, state, district, avatar });
 
   newChild
     .save()

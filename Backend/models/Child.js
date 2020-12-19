@@ -32,6 +32,10 @@ const childSchema = new Schema({
   },
   avatar : {
       type : String
+  },
+  districtID : {
+      type : mongoose.objectID,
+      required : true
   }
 },{
     versionKey: false
